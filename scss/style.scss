@@ -1,0 +1,43 @@
+// compileExpanded: ../css/style.css
+$con-width: 1180px;
+$con-pad-left: 0;
+$con-pad-right: 0;
+@import "myframe";
+
+.main-header{
+  height: 912px;
+  background: url("../img/boots.jpg") no-repeat;
+  background-position: center top;
+  }
+
+.menu {
+  min-height: 68px;
+  padding-top: 74px;
+}
+
+$logo-side: left;
+$main-logo-margin-side: 20px;
+$menu-img-height: 68px;
+$menu-img-width: 68px;
+
+$menu-user-margin-side: 26px;
+$menu-user-width: 129px;
+$menu-user-height: 52px;
+$menu-user-bgcolor: #a100ff;
+$menu-user-block-radius: 3px;
+
+$menu-nav-width: 400px;
+$menu-nav-height: 20px;
+$nav-li-margin-side: 39px;
+
+@import 'menu__logo_left';
+
+.menu__user-block{
+  background-color: #a100ff;
+  @include border-radius(5px);
+}
+
+.nav__li{
+  text-transform: uppercase;
+  color: white;
+}

@@ -1,0 +1,43 @@
+  $logo-antiside: if($logo-side == left, right, left);
+
+.menu__main-logo {
+  float: $logo-side;
+  @if($logo-side == left) {margin-right: $main-logo-margin-side;}
+  @if($logo-side == right) {margin-left: $main-logo-margin-side;}
+  width: $menu-img-width;
+  height: $menu-img-height;
+}
+
+.menu__img {
+  width: $menu-img-width;
+  height: $menu-img-height;
+}
+
+.menu__user-block {
+  float: $logo-antiside;
+  width: $menu-user-width;
+  height: $menu-user-height;
+  @if ($logo-side == left) {margin-left: $menu-user-margin-side;}
+  @if ($logo-side == right) {margin-right: $menu-user-margin-side;}
+}
+
+.nav {
+  float: $logo-antiside;
+  width: $menu-nav-width;
+  height: $menu-nav-height;
+}
+
+.nav__ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.nav__li {
+  display: inline-block;
+  @if ($logo-side == left) {margin-left: $nav-li-margin-side;}
+  @if ($logo-side == right) {margin-right: $nav-li-margin-side;}
+
+  font-size: 10px;
+}

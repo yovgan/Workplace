@@ -1,0 +1,74 @@
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1180px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.main-header {
+  height: 912px;
+  background: url("../img/boots.jpg") no-repeat;
+  background-position: center top;
+}
+
+.menu {
+  min-height: 68px;
+  padding-top: 74px;
+}
+
+.menu__main-logo {
+  float: left;
+  margin-right: 20px;
+  width: 68px;
+  height: 68px;
+}
+
+.menu__img {
+  width: 68px;
+  height: 68px;
+}
+
+.menu__user-block {
+  float: right;
+  width: 129px;
+  height: 52px;
+  margin-left: 26px;
+}
+
+.nav {
+  float: right;
+  width: 400px;
+  height: 20px;
+}
+
+.nav__ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.nav__li {
+  display: inline-block;
+  margin-left: 39px;
+  font-size: 10px;
+}
+
+.menu__user-block {
+  background-color: #a100ff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.nav__li {
+  text-transform: uppercase;
+  color: white;
+}
