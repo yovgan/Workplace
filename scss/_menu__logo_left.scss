@@ -35,9 +35,7 @@
 }
 
 .nav__li {
-  display: inline-block;
+  float: $logo-antiside;
   @if ($logo-side == left) {margin-left: $nav-li-margin-side;}
   @if ($logo-side == right) {margin-right: $nav-li-margin-side;}
-
-  font-size: 10px;
 }
