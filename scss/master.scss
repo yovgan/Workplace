@@ -1,0 +1,212 @@
+ // compileExpanded: ../css/master.min.css
+@font-face{
+font-family: 'AleoRegular';
+src: url('../fonts/aleo_regular/aleo-regular-webfont.eot');
+src: url('../fonts/aleo_regular/aleo-regular-webfont.eot?iefix') format('eot'),
+url('../fonts/aleo_regular/aleo-regular-webfont.woff') format('woff'),
+url('../fonts/aleo_regular/aleo-regular-webfont.ttf') format('truetype'),
+url('../fonts/aleo_regular/aleo-regular-webfont.svg#webfont') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+
+@font-face{
+font-family: 'AleoRegular';
+src: url('../fonts/aleo_bold/aleo-bold-webfont.eot');
+src: url('../fonts/aleo_bold/aleo-bold-webfont.eot?iefix') format('eot'),
+url('../fonts/aleo_bold/aleo-bold-webfont.woff') format('woff'),
+url('../fonts/aleo_bold/aleo-bold-webfont.ttf') format('truetype'),
+url('../fonts/aleo_bold/aleo-bold-webfont.svg#webfont') format('svg');
+font-weight: bold;
+font-style: normal;
+}
+
+@font-face{
+font-family: 'AleoRegular';
+src: url('../fonts/aleo_light/aleo-light-webfont.eot');
+src: url('../fonts/aleo_light/aleo-light-webfont.eot?iefix') format('eot'),
+url('../fonts/aleo_light/aleo-light-webfont.woff') format('woff'),
+url('../fonts/aleo_light/aleo-light-webfont.ttf') format('truetype'),
+url('../fonts/aleo_light/aleo-light-webfont.svg#webfont') format('svg');
+font-weight: lighter;
+font-style: normal;
+}
+
+@font-face{
+font-family: 'AleoRegular';
+src: url('../fonts/aleo_lightitalic/aleo-lightitalic-webfont.eot');
+src: url('../fonts/aleo_lightitalic/aleo-lightitalic-webfont.eot?iefix') format('eot'),
+url('../fonts/aleo_lightitalic/aleo-lightitalic-webfont.woff') format('woff'),
+url('../fonts/aleo_lightitalic/aleo-lightitalic-webfont.ttf') format('truetype'),
+url('../fonts/aleo_lightitalic/aleo-lightitalic-webfont.svg#webfont') format('svg');
+font-weight: lighter;
+font-style: italic;
+}
+
+@font-face{
+font-family: 'WCManonegraBtn';
+src: url('../fonts/wcmanonegrabta_regular/wcmanonegrabta-webfont.eot');
+src: url('../fonts/wcmanonegrabta_regular/wcmanonegrabta-webfont.eot?iefix') format('eot'),
+url('../fonts/wcmanonegrabta_regular/wcmanonegrabta-webfont.woff') format('woff'),
+url('../fonts/wcmanonegrabta_regular/wcmanonegrabta-webfont.ttf') format('truetype'),
+url('../fonts/wcmanonegrabta_regular/wcmanonegrabta-webfont.svg#webfont') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+body {
+  font-size: 16px;
+  font-family: "AleoRegular";
+}
+
+.container {
+  margin: 0 auto;
+  width: 1100px;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+//логотип и меню
+.header {
+  height: 69px;
+  padding-top: 41px;
+
+  vertical-align: middle;
+}
+
+.logo {
+  float: left;
+
+  img {
+    height: 29px;
+    width: 80px;
+  }
+}
+
+.nav {
+  float: right;
+  margin-top: 5px;
+
+  ul {
+    display: inline-block;
+    margin: 0;
+
+    list-style: none;
+
+    li {
+      display: inline-block;
+
+      margin-left: 45px;
+    }
+  }
+}
+
+//начало тела, начало меню, картинка
+.main__billboard{
+  margin: 0 auto;
+  padding-top: 245px;
+
+  background: url("../img/billboard.jpg");
+  height: 325px;
+  width: 1500px;
+
+  border-bottom: solid 4px #f34949;
+}
+
+.billboard__text{
+  margin: 0 auto;
+
+  color: white;
+  text-align: center;
+
+  &-qwe{
+    padding-right: 10px;
+    font-family: "WCManonegraBtn", Arial, sans-serif;
+    font-size: 100px;
+    line-height: 60px;
+    letter-spacing: -9px;
+  }
+
+  &-ans{
+    position: relative;
+
+    margin: 0 auto;
+    padding-top: 8px;
+    width: 400px;
+
+    font-family: "AleoRegular", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 75px;
+    letter-spacing: 0.6px;
+
+    &::before, {
+      content: '';
+      display: block;
+
+      position: absolute;
+      left: -41px;
+      top: 47px;
+      width: 40px;
+      height: 1px;
+      background-color: white;
+
+    }
+    &::after, {
+      content: '';
+      display: block;
+
+      position: absolute;
+      right: -41px;
+      top: 47px;
+      width: 40px;
+      height: 1px;
+      background-color: white;
+
+    }
+  }
+
+}
+
+.menu__flag {
+  margin: 0 auto;
+  position: relative;
+  top: -4px;
+  padding-top: 2px;
+
+  width: 155px;
+  height: 75px;
+
+  background: url('../img/flag.svg') no-repeat;
+
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 60px;
+  text-align: center;
+
+}
+
+.menu__food {
+  padding-top: 80px;
+
+  ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+
+}
+
+.menu__item {
+  float: left;
+
+  height: 95px;
+  width: 520px;
+}
